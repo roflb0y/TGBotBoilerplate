@@ -26,16 +26,12 @@ export class DBUserClass {
     userId: number
     username: string
     locale: string
-    processesCount: number
-    convertType: string
     joinedAt: Date
     isBanned: boolean
 
     constructor(user: DBUser) {
         this.username = user.username;
         this.userId = user.userId;
-        this.processesCount = user.processesCount;
-        this.convertType = user.convertType;
         this.locale = user.locale;
         this.joinedAt = user.joinedAt;
         this.isBanned = user.isBanned;

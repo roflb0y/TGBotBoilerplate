@@ -17,16 +17,6 @@ const users = new mongoose.Schema({
         default: "ru"
     },
 
-    processesCount: {
-        type: Number,
-        default: 0
-    },
-
-    convertType: {
-        type: String,
-        default: "0"
-    },
-
     joinedAt: {
         type: Date,
         default: () => new Date().setHours(new Date().getHours())
